@@ -1,12 +1,8 @@
 .select__container {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     display: flex;
     flex-direction: row;
     min-height: 400px;
     height: fit-content;
-    /* padding: 2rem; */
-    /* justify-content: center; */
 }
 
 .select__box {
