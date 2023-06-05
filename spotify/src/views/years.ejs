@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/years.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- <link rel="stylesheet" href="/styles/style.css"> -->
     <script src="https://kit.fontawesome.com/5531950668.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Trackerfy</title>
 </head>
 
@@ -26,12 +27,11 @@
             </div>
 
             <div class="links__container">
-                <a href="/callback" class="spotify-link">Home</a> 
-                <a href="/years" class="spotify-link">Top Hits in Years</a>
+                <a href="/callback" class="spotify-link">Home</a>
                 <a href="/tracks" class="spotify-link">Tracks</a>
                 <a href="/artists" class="spotify-link">Artists</a>
                 <a href="/genres" class="spotify-link">Genres</a>
-                <button class="logout">Logout</button>
+                <a href="/years" class="spotify-link">Top Hits in Years</a>
             </div>
         </div>
     </header>
@@ -41,18 +41,18 @@
             <div class="select__box">
                 <input type="text" name="categoria" pattern="\d" class="select__input" placeholder="Type a year"
                     onfocus="dropdown(0)" onblur="dropdown(1)">
-                <button class="select__button">
-                    Select Year
-                </button>
-            </div>
-            <div class="select__box">
-                <div class="dropDown">
-                    <div class="listDropDown">
-    
+                    <div class="dropDown">
+                        <div class="listDropDown">
+                        </div>
                     </div>
-                </div>
+                
             </div>
+            <button class="select__button">
+                Select Year
+            </button>
         </div>
+
+
         <div class="tracks">
 
         </div>
