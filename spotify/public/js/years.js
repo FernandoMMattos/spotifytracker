@@ -50,11 +50,10 @@ function dropdown(p) {
     }, 0)
 }
 
-input.addEventListener("keyup", async (e) => {
+input.addEventListener("keydown", async (e) => {
     if (/^[A-Za-z]$/.test(e.key)) {
         e.preventDefault();
     } else {
-        console.log(e);
         filterList();
     }
 });
