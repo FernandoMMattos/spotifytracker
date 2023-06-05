@@ -190,27 +190,6 @@ body {
     color: #fff;
 }
 @media(max-width: 1200px){
-    .header {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: var(--secondary-color);
-        padding: 2rem 0;
-    }
-    .links__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-    }
-    .spotify-link{
-        padding: 3px 3px;
-        font-weight: bold;
-        font-size: 16px;
-        height: fit-content;
-    }
     .presentation__container{
         display: flex;
         flex-direction: column;
