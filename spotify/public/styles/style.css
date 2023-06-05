@@ -145,6 +145,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    padding-top: 30px;
 }
 
 .presentation__container label {
@@ -289,56 +290,4 @@ body {
         margin: 0px;
         width: 70%;
     }
-
-    .footer__content__container {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        margin-bottom: 2rem;
-    }
-    
-    .footer__about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__about__text {
-        position: relative;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    /* .headerhome {
-        display: flex;
-        gap: rem;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .headerimg {
-        width: 10%;
-    }
-
-    .headermenu {
-        display: flex;
-        gap: 5rem;
-    }
-
-    .headertitle {
-        color: var(--primary-color);
-        font-size: 2rem;
-    }
-
-    .headertext {
-        color: var(--primary-color);
-        justify-content: center;
-    }
-
-    .headermenu a {
-        color: var(--primary-color);
-        text-decoration: none;
-        display: flex;
-        font-size: 1.5rem;
-    } */
 }
