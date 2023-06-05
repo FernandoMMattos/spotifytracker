@@ -85,7 +85,7 @@ body {
     color: var(--primary-color);
 }
 
-.footer__section {
+/* .footer__section {
     border-top: 3px solid var(--secondary-color);
     bottom: 0;
     width: 100%;
@@ -129,7 +129,7 @@ body {
 .footer__contact__link i {
     cursor: pointer;
     font-size: 1.35rem;
-}
+} */
 
 .presentation__container {
     color: var(--text-color);
