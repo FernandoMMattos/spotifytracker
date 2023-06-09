@@ -19,7 +19,7 @@
 
 html, body {
     margin: 0;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@ html, body {
     height: 100%;
 }
 
-.sla{
+.button__div{
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,11 @@ html, body {
     padding-bottom: 13.5rem;
 }
 
-.sla2{
-    background: linear-gradient(135deg, var(--background-color), var(--primary-darker) 130%);
+.header__div{
+    background-image: url("../assets/gifBackground.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .button {
@@ -76,7 +79,6 @@ html, body {
 
 .footer__section {
     border-top: 3px solid var(--secondary-color);
-    bottom: 0;
     width: 100%;
     color: var(--text-color);
     text-align: center;

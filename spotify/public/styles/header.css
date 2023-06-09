@@ -1,3 +1,7 @@
+:root{
+    --button-color: #121212;
+}
+
 .header {
     position: fixed;
     z-index: 1;
@@ -46,6 +50,23 @@
 
 .toggle__link__container{
     display: none;
+}
+
+.spotify-link {
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.spotify-link:hover {
+    background-color: var(--primary-color);
+    color: var(--button-color);
 }
 
 @media (max-width: 1200px) {
