@@ -69,6 +69,10 @@
     color: var(--button-color);
 }
 
+.logout{
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .header__container{
         max-width: 70vw;
@@ -108,7 +112,6 @@
 
     .toggle__link__container i{
         font-size: 25px;
-        
         color: white;
     }
     

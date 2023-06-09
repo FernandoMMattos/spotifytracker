@@ -22,7 +22,12 @@ html, body {
     height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    background-image: url("../assets/gifBackground.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
 
 .header{
     padding-top: 10rem;
@@ -33,7 +38,7 @@ html, body {
 }
 
 .presentation{
-    height: 100%;
+    height: 100vh;
 }
 
 .button__div{
@@ -46,11 +51,21 @@ html, body {
     padding-bottom: 13.5rem;
 }
 
-.header__div{
-    background-image: url("../assets/gifBackground.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.button__div h2{
+    text-align: center;
+}
+
+.header h1{
+    font-size: 80px;
+    animation: starWars 2.5s;
+}
+
+.presentation{
+    animation: shading-presentation 2s;
+}
+
+.footer__section{
+    animation: shading-footer 4s;
 }
 
 .button {
@@ -61,7 +76,7 @@ html, body {
     background-color: var(--primary-color);
     font-family: var(--font-montserrat);
     border: 4px solid var(--primary-color);
-    font-size: large;
+    font-size: 23px;
     cursor: pointer;
     transition: .3s ease-in-out;
     text-decoration: none;
@@ -78,40 +93,45 @@ html, body {
 
 
 .footer__section {
-    border-top: 3px solid var(--secondary-color);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
     color: var(--text-color);
     text-align: center;
     justify-content: center;
-    font-family: var(--font-montserrat);;
-    background: var(--secondary-color);
+    font-family: var(--font-montserrat);
     padding: 3rem 0 2rem;
 }
 
-.footer__content__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    margin-bottom: 2rem;
-}
-
 .footer__about {
-    padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    font-size: small;
+    align-items: center;
 }
 
 .footer__about__text {
-    text-align: justify;
-    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.4rem 0 2rem 0;
 }
 
 .footer__about__text a{
     text-decoration: none;
-    color: var(--text-color);
+    color: rgb(181, 181, 181);
     font-family: var(--font-montserrat);
+    transition: .1s ease-in-out;
+}
+
+.footer__about__text a:hover{
+    color: var(--primary-color);
 }
 
 .footer__contact{
@@ -131,11 +151,47 @@ html, body {
     cursor: pointer;
 }
 
-@media (max-width:1200px){
+@keyframes starWars{
+    0%{
+        font-size: 300px;
+    }
+    50%{
+        font-size: 300px;
+    }
+    100%{
+        font-size: 80px;
+    }
+}
+
+@keyframes shading-presentation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes shading-footer{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1400px){
     .footer__section {
         display: flex;
         flex-direction: column;
-        border-top: 3px solid var(--secondary-color);
         bottom: 0;
         width: 100%;
         color: var(--text-color);
@@ -143,13 +199,12 @@ html, body {
         justify-content: center;
         font-size: 0.9rem;
         font-weight: 400;
-        background: var(--secondary-color);
     }
     .footer__content__container {
         display: flex;
         flex-direction: column;
         gap: 0px;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     
     .footer__about__text {
@@ -159,6 +214,40 @@ html, body {
         margin-left: 20px;
         margin-right: 20px;
     
+    }
+    .footer__copyright{
+        padding: 0 2rem 0 2rem;
+    }
+
+    @keyframes starWars{
+        0%{
+            font-size: 18vw;
+            margin-top: 280px;
+        }
+        50%{
+            font-size: 18vw;
+            margin-top: 280px;
+        }
+        100%{
+            font-size: 12vw;
+            margin-top: 0;
+        }
+    }
+    .header{
+        padding-top: 4rem;
+        font-family: var(--font-montserrat);
+        color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+    }
+
+    .header h1{
+        font-size: 12vw;
+        animation: starWars 2.5s;
+    }
+
+    .button{
+        width: 50vw;
     }
 }
 
